@@ -25,14 +25,19 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+React.js Is a JavaScript library. It solves the problem of being able to dynamically manipulate the dom. When the page has data that changes over time at high rates without having to reload the page using a virtual DOM.  When a page is rendered using React, the state of the DOM tree structure is stored, and when there are any updates to be made to the UI, it does a diif on the old DOM tree with the new one, and updtaes only the ones that have changed.
 
 - [ ] What does it mean to _think_ in react?
+To think in React is to the about the app as you build them by Breaking the UI into a Component Hierarchy. Then Build a Static Version of the app in React. Then identify the MVP state of the UI. Then to identify where your state should live. Then finally add inverse data flow
 
 - [ ] Describe state.
+State is an instance of a React Component Class that can be defined as an object of a set of observable properites that control the behaviour of the component.
 
 - [ ] Describe props.
+Props are essentially global variables or boject. You can pass props to any component as we declare attributes for any HTML tag, you can pass props to a function based component, and pass information from one componet to another.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+Side effects means anything that results in changes that can be observed when the callcullation is completed, beside the return of the calculation itself, is a side effect. Calculations should just return the result of the calculation. Anything else is a side effect.
 
 ## Project Set Up
 
