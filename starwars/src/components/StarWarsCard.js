@@ -13,9 +13,10 @@ const CharacterCard = styled.div`
     cursor: pointer;
     box-shadow: 0 1px 6px -2px gray;
     transition: transform 0.2s ease-in;
+    border-radius: 10px;
 
     &:hover {
-        transform: translate(-5px) scale(1.2);
+        transform: translate(-5px) scale(1.1);
         box-shadow: 5px 8px 5px #1e90ff;
     }
 `
