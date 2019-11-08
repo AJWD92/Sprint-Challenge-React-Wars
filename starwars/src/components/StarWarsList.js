@@ -1,6 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import StarWarsCard from './StarWarsCard';
 import axios from 'axios';
+import styled from 'styled-components';
+
+const MainDiv = styled.div`
+    display: flex;
+    // flex-direction: column;
+    max-width: 100%
+    margin: 0 5%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+`
 
 export default function StarWarsList() {
     const [characters, setCharacters] = useState([]);
@@ -15,10 +26,10 @@ export default function StarWarsList() {
         });
     }, []);
     return (
-        <div>
+        <MainDiv>
             {characters.map((character) => {
                 return <StarWarsCard key={character.name} name={character.name} gender={character.gender} height={character.height} mass={character.mass} />
             })}
-        </div>
+        </MainDiv>
     )
 }

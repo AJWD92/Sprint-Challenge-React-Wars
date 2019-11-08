@@ -2,14 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CharacterCard = styled.div`
+    background: #fff;
     color: #000;
-    width: 200px;
+    width: 48%;
     max-height: 300px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin:0 5px 20px;
     cursor: pointer;
     box-shadow: 0 1px 6px -2px gray;
     transition: transform 0.2s ease-in;
